@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reach Point Agency | Influencer Marketing & PR</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        brandOrange: '#FF6B00',
+                        brandDark: '#111111',
+                        brandGray: '#1A1A1A',
+                    }
+                }
+            }
+        }
+    </script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+    <style>
+        body { font-family: 'Plus Jakarta Sans', sans-serif; }
+
+        @keyframes draw-line-smooth {
+            from { stroke-dashoffset: 350; }
+            to { stroke-dashoffset: 0; }
+        }
+        .animated-path-smooth {
+            stroke-dasharray: 350;
+            stroke-dashoffset: 350;
+            animation: draw-line-smooth 6s cubic-bezier(0.25, 1, 0.5, 1) forwards infinite;
+        }
+
+        @keyframes point-fade-up {
+            0%, 100% { opacity: 0.2; transform: scale(0.9); box-shadow: 0 0 5px #FF6B00; }
+            50% { opacity: 1; transform: scale(1.2); box-shadow: 0 0 15px #FF6B00; }
+        }
+        .point-1 { animation: point-fade-up 3s infinite ease-in-out; animation-delay: 0s; }
+        .point-2 { animation: point-fade-up 3s infinite ease-in-out; animation-delay: 1.5s; }
+        .point-3 { animation: point-fade-up 3s infinite ease-in-out; animation-delay: 3s; }
+
+        @keyframes float-animation {
+            0%, 100% { transform: translateY(0); }
+            50% { transform: translateY(-15px); }
+        }
+        .animate-float { animation: float-animation 4s ease-in-out infinite; }
+
+        .no-scrollbar::-webkit-scrollbar { display: none; }
+        .no-scrollbar { -ms-overflow-style: none; scrollbar-width: none; }
+    </style>
+</head>
+<body class="bg-brandDark text-white overflow-x-hidden">
+
+<nav class="fixed top-0 w-full z-50 bg-brandDark/80 backdrop-blur-md border-b border-white/10">
+    <div class="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
+        <div class="flex items-baseline space-x-1">
+            <span class="text-2xl font-black tracking-tighter text-white">REACH</span>
+            <span class="text-2xl font-black tracking-tighter text-brandOrange">POINT</span>
+        </div>
+        <div class="hidden md:flex items-center space-x-8 font-medium text-sm tracking-wide">
+            <a href="#about" class="hover:text-brandOrange transition">WHO WE ARE</a>
+            <a href="#why-us" class="hover:text-brandOrange transition">WHY US</a>
+            <a href="#results" class="hover:text-brandOrange transition">OUR IMPACT</a>
+            <a href="#industries" class="hover:text-brandOrange transition">INDUSTRIES</a>
+            <a href="#contact" class="bg-brandOrange text-white px-5 py-2.5 rounded-full font-semibold hover:bg-white hover:text-brandDark transition duration-300">CONTACT US</a>
+        </div>
+    </div>
+</nav>
+
+<section class="relative min-h-screen pt-24 flex items-center justify-center bg-gradient-to-b from-brandDark via-brandGray to-brandDark">
+    <div class="absolute inset-0 bg-[radial-gradient(circle_at_top_right,_var(--tw-gradient-stops))] from-brandOrange/10 via-transparent to-transparent"></div>
+    <div class="max-w-7xl mx-auto px-6 text-center space-y-6 z-10 py-12">
+        <div class="inline-flex items-center space-x-2 bg-brandOrange/10 border border-brandOrange/30 text-brandOrange px-4 py-1.5 rounded-full text-xs font-bold uppercase tracking-widest">
+            <span>EST. 2025</span>
+        </div>
+        <h1 class="text-5xl md:text-8xl font-black tracking-tight leading-none uppercase">
+            FROM ATTENTION<br>TO <span class="text-brandOrange inline-block min-w-[200px]" id="typewriter">ACTION</span>
+        </h1>
+        <p class="text-gray-400 text-lg md:text-2xl max-w-2xl mx-auto font-light tracking-wide">
+            INFLUENCER MARKETING & PR CAMPAIGNS AGENCY
+        </p>
+        <div class="pt-6">
+            <a href="#contact" class="inline-flex items-center justify-center bg-brandOrange text-white font-bold px-8 py-4 rounded-full text-base shadow-lg shadow-brandOrange/20 hover:bg-white hover:text-brandDark hover:shadow-none transition duration-300 transform hover:-translate-y-1">
+                Grow Your Brand Now <i class="fa-solid fa-arrow-right ml-2 text-sm"></i>
+            </a>
+        </div>
+    </div>
+</section>
+
+<section id="about" class="py-24 border-t border-white/5 bg-brandDark">
+    <div class="max-w-7xl mx-auto px-6">
+        <div class="text-center max-w-3xl mx-auto mb-16 space-y-3">
+            <p class="text-brandOrange font-bold text-xs uppercase tracking-widest">Who We Are</p>
+            <h2 class="text-3xl md:text-5xl font-black tracking-tight">Our Mission & Expertise</h2>
+        </div>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+            <div class="bg-brandGray p-8 md:p-12 rounded-3xl border border-white/5 space-y-4 hover:border-brandOrange/30 transition duration-300 transform hover:-translate-y-2">
+                <div class="w-12 h-12 rounded-2xl bg-brandOrange/10 flex items-center justify-center text-brandOrange text-xl font-bold mb-6">
+                    <i class="fa-solid fa-bullseye"></i>
+                </div>
+                <h3 class="text-2xl font-bold">Our Mission</h3>
+                <p class="text-gray-400 leading-relaxed font-light">
+                    Reach Point is a leading influencer marketing agency, helping brands transform visibility into engagement through strategic influencer partnerships that create buzz, build trust, and generate real results.
+                </p>
+            </div>
+            <div class="bg-brandGray p-8 md:p-12 rounded-3xl border border-white/5 space-y-4 hover:border-brandOrange/30 transition duration-300 transform hover:-translate-y-2">
+                <div class="w-12 h-12 rounded-2xl bg-brandOrange/10 flex items-center justify-center text-brandOrange text-xl font-bold mb-6">
+                    <i class="fa-solid fa-star"></i>
+                </div>
+                <h3 class="text-2xl font-bold">Our Expertise</h3>
+                <p class="text-gray-400 leading-relaxed font-light">
+                    Our team has successfully managed <span class="text-white font-semibold">25+ influencer marketing campaigns</span> across Egypt and the GCC, helping brands increase sales, awareness, and strengthen their market positioning.
+                </p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="why-us" class="py-24 bg-brandGray/50 relative">
+    <div class="max-w-7xl mx-auto px-6">
+        <div class="text-center max-w-3xl mx-auto mb-20 space-y-3">
+            <p class="text-brandOrange font-bold text-xs uppercase tracking-widest">Why Reach Point</p>
+            <h2 class="text-3xl md:text-5xl font-black tracking-tight">Strategic Influencer Marketing</h2>
+        </div>
+        <div class="grid grid-cols-1 lg:grid-cols-3 gap-8">
+            <div class="bg-brandDark p-8 rounded-3xl border border-white/5 space-y-6 flex flex-col justify-between hover:scale-[1.03] transition duration-300 shadow-xl">
+                <div class="space-y-4">
+                    <div class="text-xs font-bold tracking-widest text-brandOrange uppercase">01 / Network</div>
+                    <h3 class="text-2xl font-extrabold tracking-tight">A Network of +50,000 Influencers</h3>
+                    <p class="text-gray-400 text-sm leading-relaxed font-light text-left">
+                        We own a verified database of over 50,000+ influencers across Egypt and the Gulf region (GCC). We precisely filter creators based on their specific Category and target audience demographics, ensuring the absolute perfect match for your brand.
+                    </p>
+                </div>
+                <div class="border-t border-white/10 pt-4 flex justify-between items-center">
+                    <span class="text-4xl font-black text-brandOrange" id="live-counter">+50,000</span>
+                    <span class="text-xs text-gray-500 uppercase">Verified Creators</span>
+                </div>
+            </div>
+            <div class="bg-brandDark p-8 rounded-3xl border border-white/5 space-y-6 flex flex-col justify-between hover:scale-[1.03] transition duration-300 shadow-xl">
+                <div class="space-y-4">
+                    <div class="text-xs font-bold tracking-widest text-brandOrange uppercase">02 / Execution</div>
+                    <h3 class="text-2xl font-extrabold tracking-tight leading-tight">Creating the Buzz &<br>High Volume Execution</h3>
+                    <p class="text-gray-400 text-sm leading-relaxed font-light text-left">
+                        We continuously expand and update our network for maximum freshness. We have the infrastructure to launch high-volume campaigns featuring 100+ influencers simultaneously in record time. This creates an instant viral wave across social media.
+                    </p>
+                </div>
+                <div class="border-t border-white/10 pt-4 flex justify-between items-center">
+                    <span class="text-4xl font-black text-brandOrange">+100</span>
+                    <span class="text-xs text-gray-500 uppercase">Simultaneous Creators</span>
+                </div>
+            </div>
+            <div class="bg-brandDark p-8 rounded-3xl border border-white/5 space-y-6 flex flex-col justify-between hover:scale-[1.03] transition duration-300 shadow-xl">
+                <div class="space-y-4">
+                    <div class="text-xs font-bold tracking-widest text-brandOrange uppercase">03 / Management</div>
+                    <h3 class="text-2xl font-extrabold tracking-tight leading-tight">Proven Expertise &<br>End-to-End Management</h3>
+                    <p class="text-gray-400 text-sm leading-relaxed font-light text-left">
+                        Our team has a track record of successfully managing 25+ diverse campaigns. This includes launching new brands in the market, product/branch openings, and executing major exhibitions. We manage your campaign from <span class="whitespace-nowrap font-medium text-white">A to Z</span>.
+                    </p>
+                </div>
+                <div class="border-t border-white/10 pt-4 flex justify-between items-center">
+                    <span class="text-4xl font-black text-brandOrange">100%</span>
+                    <span class="text-xs text-gray-500 uppercase">Full Control</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="results" class="py-24 bg-brandDark">
+    <div class="max-w-7xl mx-auto px-6">
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+            <div class="lg:col-span-5 space-y-6">
+                <h2 class="text-4xl md:text-5xl font-black tracking-tight leading-tight uppercase text-brandOrange">Real Results</h2>
+                <p class="text-gray-200 text-lg md:text-xl font-bold tracking-wide">More visibility. More trust. More customers.</p>
+                <div class="space-y-4 pt-2">
+                    <div class="flex items-start space-x-3 group">
+                        <div class="text-brandOrange mt-1 group-hover:scale-125 transition duration-200"><i class="fa-solid fa-circle-check"></i></div>
+                        <div>
+                            <h4 class="font-bold text-white">Content Deliverables</h4>
+                            <p class="text-gray-400 text-sm font-light">Natural, professional brand showcasing published directly on influencers' personal accounts + you get high-resolution copies for paid ads.</p>
+                        </div>
+                    </div>
+                    <div class="flex items-start space-x-3 group">
+                        <div class="text-brandOrange mt-1 group-hover:scale-125 transition duration-200"><i class="fa-solid fa-circle-check"></i></div>
+                        <div>
+                            <h4 class="font-bold text-white">Audience Growth & Engagement</h4>
+                            <p class="text-gray-400 text-sm font-light">10% to 25%+ increase in active follower base. Average 10% to 15% engagement rates (Likes, Comments, Shares) creating instant trust.</p>
+                        </div>
+                    </div>
+                    <div class="flex items-start space-x-3 group">
+                        <div class="text-brandOrange mt-1 group-hover:scale-125 transition duration-200"><i class="fa-solid fa-circle-check"></i></div>
+                        <div>
+                            <h4 class="font-bold text-white">Direct Inquiries (DMs & Leads)</h4>
+                            <p class="text-gray-400 text-sm font-light">Floods of potential customers asking directly about your offers, location, or product prices.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="lg:col-span-7 bg-brandGray p-8 rounded-3xl border border-white/5 relative overflow-hidden shadow-2xl">
+                <h3 class="text-lg font-bold mb-6 flex items-center justify-between">
+                    <span>Audience Growth Velocity</span>
+                    <span class="text-xs bg-green-500/10 text-green-400 px-2.5 py-1 rounded-full font-bold animate-pulse">+25% Boost</span>
+                </h3>
+                <div class="h-64 w-full relative pt-6">
+                    <svg class="w-full h-full stroke-brandOrange" viewBox="0 0 100 40" fill="none" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none">
+                        <path class="animated-path-smooth" d="M0 38 Q 25 32, 50 20 T 100 3" stroke-width="1.2" stroke-linecap="round"/>
+                    </svg>
+                    <div class="glowing-indicator point-1 absolute bottom-[5%] left-[2%] w-2 h-2 bg-white border border-brandOrange rounded-full"></div>
+                    <div class="glowing-indicator point-2 absolute bottom-[45%] left-[48%] w-2 h-2 bg-white border border-brandOrange rounded-full"></div>
+                    <div class="glowing-indicator point-3 absolute top-[3%] right-[1%] w-2 h-2 bg-white border border-brandOrange rounded-full"></div>
+                </div>
+                <div class="flex justify-between text-xs text-gray-500 mt-4 border-t border-white/5 pt-4">
+                    <span>Campaign Launch</span>
+                    <span>Week 2 (The Buzz)</span>
+                    <span>Post Campaign Peak</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="industries" class="py-24 bg-brandDark border-t border-b border-white/5">
+    <div class="max-w-7xl mx-auto px-6">
+        <div class="text-center max-w-3xl mx-auto mb-16 space-y-4">
+            <h3 class="text-brandOrange font-bold text-xs uppercase tracking-[0.2em]">Niche Industries</h3>
+            <h2 class="text-4xl md:text-6xl font-black text-white">REAL INFLUENCERS - REAL STORIES</h2>
+            <p class="text-gray-400 text-lg md:text-xl font-light leading-relaxed max-w-2xl mx-auto">
+                No matter your industry, our database of creators is strategically positioned to drive organic reach and viral impact for your brand.
+            </p>
+        </div>
+
+        <div class="relative px-4 md:px-8">
+            <button id="slider-prev" class="absolute -left-2 md:left-2 top-1/2 -translate-y-1/2 z-30 text-brandOrange hover:text-white text-4xl p-2 transition duration-300">
+                <i class="fa-solid fa-chevron-left"></i>
+            </button>
+            
+            <div id="slider-container" class="overflow-hidden no-scrollbar">
+                <div id="slider-track" class="flex transition-transform duration-500 ease-out gap-6">
+                    <div class="min-w-full sm:min-w-[calc(50%-12px)] lg:min-w-[calc(33.333%-16px)] bg-[#141414] p-5 rounded-[2.5rem] border border-white/5 flex flex-col justify-between hover:border-brandOrange/30 transition duration-300">
+                        <div class="overflow-hidden rounded-[1.8rem] animate-float"><img src="https://i.postimg.cc/HkyZ5XCf/db4b553463634725852ee7a1d75d54b2.jpg" alt="Beauty" class="w-full aspect-square object-cover"></div>
+                        <div class="mt-5 bg-brandOrange text-white font-bold py-3.5 px-4 rounded-2xl text-center text-sm tracking-wide uppercase">Beauty</div>
+                    </div>
+                    <div class="min-w-full sm:min-w-[calc(50%-12px)] lg:min-w-[calc(33.333%-16px)] bg-[#141414] p-5 rounded-[2.5rem] border border-white/5 flex flex-col justify-between hover:border-brandOrange/30 transition duration-300">
+                        <div class="overflow-hidden rounded-[1.8rem] animate-float" style="animation-delay: 0.5s;"><img src="https://images.unsplash.com/photo-1546069901-ba9599a7e63c?auto=format&fit=crop&w=600&q=80" alt="Food" class="w-full aspect-square object-cover"></div>
+                        <div class="mt-5 bg-brandOrange text-white font-bold py-3.5 px-4 rounded-2xl text-center text-sm tracking-wide uppercase">Food</div>
+                    </div>
+                    <div class="min-w-full sm:min-w-[calc(50%-12px)] lg:min-w-[calc(33.333%-16px)] bg-[#141414] p-5 rounded-[2.5rem] border border-white/5 flex flex-col justify-between hover:border-brandOrange/30 transition duration-300">
+                        <div class="overflow-hidden rounded-[1.8rem] animate-float" style="animation-delay: 1s;"><img src="https://i.postimg.cc/j5SdLsJW/42406f4320c0c1b6589d34127c3906d1.jpg" alt="Fashion" class="w-full aspect-square object-cover"></div>
+                        <div class="mt-5 bg-brandOrange text-white font-bold py-3.5 px-4 rounded-2xl text-center text-sm tracking-wide uppercase">Fashion</div>
+                    </div>
+                    <div class="min-w-full sm:min-w-[calc(50%-12px)] lg:min-w-[calc(33.333%-16px)] bg-[#141414] p-5 rounded-[2.5rem] border border-white/5 flex flex-col justify-between hover:border-brandOrange/30 transition duration-300">
+                        <div class="overflow-hidden rounded-[1.8rem] animate-float" style="animation-delay: 1.5s;"><img src="https://i.postimg.cc/1RFrvPdt/3f67bde668b2ddb09c40b4e7ea5df2f2.jpg" alt="Lifestyle" class="w-full aspect-square object-cover"></div>
+                        <div class="mt-5 bg-brandOrange text-white font-bold py-3.5 px-4 rounded-2xl text-center text-sm tracking-wide uppercase">Lifestyle</div>
+                    </div>
+                    <div class="min-w-full sm:min-w-[calc(50%-12px)] lg:min-w-[calc(33.333%-16px)] bg-[#141414] p-5 rounded-[2.5rem] border border-white/5 flex flex-col justify-between hover:border-brandOrange/30 transition duration-300">
+                        <div class="overflow-hidden rounded-[1.8rem] animate-float" style="animation-delay: 2s;"><img src="https://i.postimg.cc/0QccxCpx/68a400d5846d88df72de917a69e6429e.jpg" alt="Clinics" class="w-full aspect-square object-cover"></div>
+                        <div class="mt-5 bg-brandOrange text-white font-bold py-3.5 px-4 rounded-2xl text-center text-sm tracking-wide uppercase">Clinics</div>
+                    </div>
+                    <div class="min-w-full sm:min-w-[calc(50%-12px)] lg:min-w-[calc(33.333%-16px)] bg-[#141414] p-5 rounded-[2.5rem] border border-white/5 flex flex-col justify-between hover:border-brandOrange/30 transition duration-300">
+                        <div class="overflow-hidden rounded-[1.8rem] animate-float" style="animation-delay: 2.5s;"><img src="https://images.unsplash.com/photo-1517838277536-f5f99be501cd?auto=format&fit=crop&w=600&q=80" alt="Athletes" class="w-full aspect-square object-cover"></div>
+                        <div class="mt-5 bg-brandOrange text-white font-bold py-3.5 px-4 rounded-2xl text-center text-sm tracking-wide uppercase">Fitness & Athletes</div>
+                    </div>
+                </div>
+            </div>
+            <button id="slider-next" class="absolute -right-2 md:right-2 top-1/2 -translate-y-1/2 z-30 text-brandOrange hover:text-white text-4xl p-2 transition duration-300">
+                <i class="fa-solid fa-chevron-right"></i>
+            </button>
+        </div>
+    </div>
+</section>
+
+<section id="contact" class="py-24 bg-brandDark relative">
+    <div class="max-w-4xl mx-auto px-6 text-center space-y-12">
+        <h2 class="text-5xl md:text-7xl font-black tracking-[0.05em] leading-tight uppercase">
+            WE BUILD <span class="text-brandOrange block mt-2">PARTNERSHIPS</span>
+            <span class="text-3xl md:text-5xl block mt-4 tracking-[0.2em] opacity-80">NOT JUST CAMPAIGNS</span>
+        </h2>
+        <p class="text-gray-300 text-lg md:text-xl font-medium tracking-wide">
+            Because the success of your first campaign is just the beginning of a long-term journey, we have special offers for our new customers; contact us now to discover our packages.
+        </p>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8 text-left max-w-2xl mx-auto bg-brandGray p-10 rounded-3xl border border-white/5 shadow-2xl">
+            <div class="space-y-6">
+                <h3 class="text-lg font-bold text-brandOrange uppercase tracking-widest border-b border-white/10 pb-3">Direct Contact</h3>
+                <div class="space-y-4">
+                    <a href="https://wa.me/201286570847" target="_blank" class="flex items-center space-x-4 text-gray-300 hover:text-brandOrange transition duration-300">
+                        <i class="fa-solid fa-phone text-brandOrange text-xl"></i>
+                        <span class="text-lg">+20 128 657 0847</span>
+                    </a>
+                    <a href="mailto:Reachpointofficial@gmail.com" class="flex items-center space-x-4 text-gray-300 hover:text-brandOrange transition duration-300">
+                        <i class="fa-solid fa-envelope text-brandOrange text-xl"></i>
+                        <span class="text-lg">Reachpointofficial@gmail.com</span>
+                    </a>
+                </div>
+            </div>
+            <div class="space-y-6">
+                <h3 class="text-lg font-bold text-brandOrange uppercase tracking-widest border-b border-white/10 pb-3">Follow Us</h3>
+                <div class="flex flex-col space-y-4">
+                    <a href="https://www.instagram.com/reachpoint_me" target="_blank" class="flex items-center space-x-4 text-gray-300 hover:text-brandOrange transition duration-300">
+                        <i class="fa-brands fa-instagram text-brandOrange text-2xl"></i>
+                        <span class="text-lg">reachpoint_me</span>
+                    </a>
+                    <a href="https://www.tiktok.com/@reachpoint_me" target="_blank" class="flex items-center space-x-4 text-gray-300 hover:text-brandOrange transition duration-300">
+                        <i class="fa-brands fa-tiktok text-brandOrange text-2xl"></i>
+                        <span class="text-lg">Reachpoint_me</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <p class="text-xs text-gray-600 pt-8 border-t border-white/5">&copy; 2026 REACH POINT Agency. All rights reserved.</p>
+    </div>
+</section>
+
+<script>
+    document.addEventListener("DOMContentLoaded", () => {
+        // Typewriter Logic
+        const words = ["ACTION", "BUZZ", "GROWTH", "RESULTS"];
+        const el = document.getElementById('typewriter');
+        let wordIndex = 0;
+        
+        setInterval(() => {
+            wordIndex = (wordIndex + 1) % words.length;
+            el.textContent = words[wordIndex];
+        }, 2000);
+
+        // Slider Logic
+        const track = document.getElementById('slider-track');
+        const nextBtn = document.getElementById('slider-next');
+        const prevBtn = document.getElementById('slider-prev');
+        let currentIndex = 0;
+        function updateSlider() {
+            const cardWidth = track.firstElementChild.getBoundingClientRect().width;
+            track.style.transform = `translateX(-${currentIndex * (cardWidth + 24)}px)`;
+        }
+        nextBtn.addEventListener('click', () => {
+            let limit = window.innerWidth >= 1024 ? 3 : (window.innerWidth >= 640 ? 4 : 5);
+            currentIndex = (currentIndex < limit) ? currentIndex + 1 : 0;
+            updateSlider();
+        });
+        prevBtn.addEventListener('click', () => {
+            let limit = window.innerWidth >= 1024 ? 3 : (window.innerWidth >= 640 ? 4 : 5);
+            currentIndex = (currentIndex > 0) ? currentIndex - 1 : limit;
+            updateSlider();
+        });
+    });
+</script>
+</body>
+</html>
